@@ -1,4 +1,6 @@
-# from section import section
+
+from ctypes import sizeof
+
 
 class document:
     def __init__(self,filename = "test.tex"):
@@ -57,12 +59,17 @@ class document:
         if(len(self.intro)):
             self.file.write("\\maketitle\n")
         if(self.toc):
-            self.file.write("\\tableofcontents\n")
-        if(len(self.sections)):
-            for s in self.sections:
-                self.file.write("\\section{"+ s.name+"}\n")
-                self.file.write(s.content+"\n")
-        
+            self.file.write("\\tableofcontents\n\n")
+        for s in self.sections:
+            self.file.write("\\section{"+ s.name+"}\n")
+            self.file.write(s.content+"\n\n")
+            for ss in s.subsections:
+                self.file.write("\\subsection{"+ ss.name+"}\n")
+                self.file.write(s.content+"\n\n")
+                for sss in ss.subsubsections:
+                    self.file.write("\\subsubsection{"+ sss.name+"}\n")
+                    self.file.write(s.content+"\n\n")
+
         self.content.append("\\end{document}\n")
         self.file.writelines(self.content)
         self.file.close()
