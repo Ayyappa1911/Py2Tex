@@ -1,10 +1,41 @@
 \documentclass{article}
 \usepackage[utf8]{inputenc}
 
+\usepackage{calc}
+\usepackage{eso-pic}
+\newlength{\PageFrameTopMargin}
+\newlength{\PageFrameBottomMargin}
+\newlength{\PageFrameLeftMargin}
+\newlength{\PageFrameRightMargin}
+
+\setlength{\PageFrameTopMargin}{1cm}
+\setlength{\PageFrameBottomMargin}{1cm}
+\setlength{\PageFrameLeftMargin}{1cm}
+\setlength{\PageFrameRightMargin}{1cm}
+
+\makeatletter
+
+\newlength{\Page@FrameHeight}
+\newlength{\Page@FrameWidth}
+
+\AddToShipoutPicture{
+   \thinlines
+   \setlength{\Page@FrameHeight}{\paperheight-\PageFrameTopMargin-\PageFrameBottomMargin}
+   \setlength{\Page@FrameWidth}{\paperwidth-\PageFrameLeftMargin-\PageFrameRightMargin}
+   \put(\strip@pt\PageFrameLeftMargin,\strip@pt\PageFrameTopMargin){
+   \framebox(\strip@pt\Page@FrameWidth, \strip@pt\Page@FrameHeight){}}}
+
+\makeatother
+            
 \title{Testing the document}
 \author{Ayyappa Koppuravuri}
 
 \begin{document}
 \maketitle
+\tableofcontents
+\section{Story}
+This is the content of the story
+\section{Story2}
+This is the content of story 2
 Helmo
 \end{document}
