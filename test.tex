@@ -26,31 +26,51 @@
    \framebox(\strip@pt\Page@FrameWidth, \strip@pt\Page@FrameHeight){}}}
 
 \makeatother
-            
+
+\usepackage{graphicx}
+
 \title{Testing the document}
 \author{Ayyappa Koppuravuri}
+
+\graphicspath{{Images/}}
 
 \begin{document}
 \maketitle
 \tableofcontents
 
+Helmo
 \section{Story}
 This is the content of the story
 
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=5cm]{image1.jpg}
+	\caption{This is a jpg image}
+\end{figure}
+
+
+
 \subsection{story part1}
-This is the content of the story
+This is the content belonging to part1 of the story
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=5cm]{image1.jpg}
+	\caption{This is a jpg image}
+\end{figure}
+
+
 
 \subsubsection{story part1.1}
-This is the content of the story
+This is the content belonging to part1.1 of the story
 
 \section{Story1}
 This is the content of story 1
 
 \subsection{Story1 part1}
-This is the content of story 1
+This is the content belonging to part1 of the story1
 
 \subsubsection{Story1 part1.1}
-This is the content of story 1
+This is the content belonging to part1 of the story1.1
 
-Helmo
 \end{document}

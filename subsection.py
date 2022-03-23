@@ -4,9 +4,12 @@ class subsection:
         self.name = name
         self.content = content
         self.subsubsections = []
+        # self.images = []
     def addcontent(self,content=""):
         self.content = content
     def addsubsubsection(self,s):
         self.subsubsections.append(s)
-        # self.content += "\n\n\\subsubsection{"+s.name+"}\n"
-        # self.content+=s.content+"\n"
+    def addimage(self,i):
+        # self.images.append(i)
+        self.content += i.getcontent()
+        # print(i.getcontent())
