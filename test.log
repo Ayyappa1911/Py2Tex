@@ -1,0 +1,219 @@
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2022.2.18)  23 MAR 2022 23:21
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**test.tex
+(./test.tex
+LaTeX2e <2020-02-02> patch level 2
+L3 programming layer <2020-02-14>
+(/usr/share/texlive/texmf-dist/tex/latex/base/article.cls
+Document Class: article 2019/12/20 v1.4l Standard LaTeX document class
+(/usr/share/texlive/texmf-dist/tex/latex/base/size10.clo
+File: size10.clo 2019/12/20 v1.4l Standard LaTeX file (size option)
+)
+\c@part=\count167
+\c@section=\count168
+\c@subsection=\count169
+\c@subsubsection=\count170
+\c@paragraph=\count171
+\c@subparagraph=\count172
+\c@figure=\count173
+\c@table=\count174
+\abovecaptionskip=\skip47
+\belowcaptionskip=\skip48
+\bibindent=\dimen134
+)
+(/usr/share/texlive/texmf-dist/tex/latex/base/inputenc.sty
+Package: inputenc 2018/08/11 v1.3c Input encoding file
+\inpenc@prehook=\toks14
+\inpenc@posthook=\toks15
+)
+(/usr/share/texlive/texmf-dist/tex/latex/tools/calc.sty
+Package: calc 2017/05/25 v4.3 Infix arithmetic (KKT,FJ)
+\calc@Acount=\count175
+\calc@Bcount=\count176
+\calc@Adimen=\dimen135
+\calc@Bdimen=\dimen136
+\calc@Askip=\skip49
+\calc@Bskip=\skip50
+LaTeX Info: Redefining \setlength on input line 80.
+LaTeX Info: Redefining \addtolength on input line 81.
+\calc@Ccount=\count177
+\calc@Cskip=\skip51
+)
+
+! LaTeX Error: File `eso-pic.sty' not found.
+
+Type X to quit or <RETURN> to proceed,
+or enter new name. (Default extension: sty)
+
+Enter file name: test.tex
+(./test.tex
+
+! LaTeX Error: Two \documentclass or \documentstyle commands.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1 \documentclass{
+                   article}
+? 
+\PageFrameTopMargin=\skip52
+\PageFrameBottomMargin=\skip53
+\PageFrameLeftMargin=\skip54
+\PageFrameRightMargin=\skip55
+\Page@FrameHeight=\skip56
+\Page@FrameWidth=\skip57
+! Undefined control sequence.
+l.21 \AddToShipoutPicture
+                         {
+? 
+! You can't use `\raise' in vertical mode.
+\put  (#1,#2)#3->\@killglue \raise 
+                                   #2\unitlength \hb@xt@ \z@ {\kern #1\unitl...
+l.26 ...FrameWidth, \strip@pt\Page@FrameHeight){}}
+                                                  }
+? 
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.26 ...FrameWidth, \strip@pt\Page@FrameHeight){}}
+                                                  }
+? 
+! Missing number, treated as zero.
+<to be read again> 
+                   \hbox 
+l.26 ...FrameWidth, \strip@pt\Page@FrameHeight){}}
+                                                  }
+? 
+! Illegal unit of measure (pt inserted).
+<to be read again> 
+                   \hbox 
+l.26 ...FrameWidth, \strip@pt\Page@FrameHeight){}}
+                                                  }
+? 
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 2019/11/30 v1.2a Enhanced LaTeX Graphics (DPC,SPQR)
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
+\KV@toks@=\toks16
+)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2019/11/30 v1.4a Standard LaTeX Graphics (DPC,SPQR)
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/trig.sty
+Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: pdftex.def on input line 105.
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics-def/pdftex.def
+File: pdftex.def 2018/01/08 v1.0l Graphics/color driver for pdftex
+))
+\Gin@req@height=\dimen137
+\Gin@req@width=\dimen138
+)
+(/usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-pdfmode.def
+File: l3backend-pdfmode.def 2020-02-03 L3 backend support: PDF mode
+\l__kernel_color_stack_int=\count178
+\l__pdf_internal_box=\box45
+)
+No file test.aux.
+\openout1 = `test.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 37.
+LaTeX Font Info:    ... okay on input line 37.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 37.
+LaTeX Font Info:    ... okay on input line 37.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 37.
+LaTeX Font Info:    ... okay on input line 37.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 37.
+LaTeX Font Info:    ... okay on input line 37.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 37.
+LaTeX Font Info:    ... okay on input line 37.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 37.
+LaTeX Font Info:    ... okay on input line 37.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 37.
+LaTeX Font Info:    ... okay on input line 37.
+(/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count179
+\scratchdimen=\dimen139
+\scratchbox=\box46
+\nofMPsegments=\count180
+\nofMParguments=\count181
+\everyMPshowfont=\toks17
+\MPscratchCnt=\count182
+\MPscratchDim=\dimen140
+\MPnumerator=\count183
+\makeMPintoPDFobject=\count184
+\everyMPtoPDFconversion=\toks18
+) (/usr/share/texlive/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
+Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
+85.
+
+(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
+e
+))
+[1
+
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <12> on input line 38.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <8> on input line 38.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <6> on input line 38.
+
+No file test.toc.
+\tf@toc=\write3
+\openout3 = `test.toc'.
+
+[2]
+<Images/image1.jpg, id=13, 228.855pt x 143.0946pt>
+File: Images/image1.jpg Graphic file (type jpg)
+<use Images/image1.jpg>
+Package pdftex.def Info: Images/image1.jpg  used on input line 47.
+(pdftex.def)             Requested size: 142.26378pt x 88.95572pt.
+File: Images/image1.jpg Graphic file (type jpg)
+<use Images/image1.jpg>
+Package pdftex.def Info: Images/image1.jpg  used on input line 56.
+(pdftex.def)             Requested size: 142.26378pt x 88.95572pt.
+ [3 <./Images/image1.jpg>]
+File: Images/image1.jpg Graphic file (type jpg)
+<use Images/image1.jpg>
+Package pdftex.def Info: Images/image1.jpg  used on input line 78.
+(pdftex.def)             Requested size: 142.26378pt x 88.95572pt.
+ [4] (./test.aux) ) )
+(\end occurred when \ifx on line 6 was incomplete) 
+Here is how much of TeX's memory you used:
+ 1279 strings out of 483183
+ 18699 string characters out of 5966292
+ 245921 words of memory out of 5000000
+ 16321 multiletter control sequences out of 15000+600000
+ 536593 words of font info for 38 fonts, out of 8000000 for 9000
+ 14 hyphenation exceptions out of 8191
+ 39i,6n,31p,213b,229s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/share/texlive/texmf-dis
+t/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texlive/texmf-dist/font
+s/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type
+1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/publi
+c/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfo
+nts/cm/cmr17.pfb>
+Output written on test.pdf (4 pages, 173355 bytes).
+PDF statistics:
+ 38 PDF objects out of 1000 (max. 8388607)
+ 25 compressed objects within 1 object stream
+ 0 named destinations out of 1000 (max. 500000)
+ 6 words of extra memory for PDF output out of 10000 (max. 10000000)
+

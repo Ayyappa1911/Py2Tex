@@ -1,4 +1,13 @@
-import image
+
+# Steps to execute this code and generate a .pdf file.
+
+# Run 
+
+# $python3 main.py
+# $pylatex test.tex
+# ---> Enter the name of the file (if asked) as test.tex
+# ***Click 'ENTER' until command line appear
+# ---> You might not get all the Overleaf features for this execution!!
 
 class document:
     
@@ -75,27 +84,35 @@ class document:
             self.file.write("\\tableofcontents\n\n")
         self.file.writelines(self.content)
         for s in self.sections:
-            if (type(s)==image): #Adding images on Document is not fine
-                self.file.write(s.getcontent())
-            else:
+            if(s.type):
                 self.file.write("\\section{"+ s.name+"}\n")
-                self.file.write(s.content+"\n\n")
-                for ss in s.subsections:
+            elif((s.type) == 0):
+                self.file.write("\\section*{"+ s.name+"}\n")
+            self.file.write(s.content+"\n\n")
+            for ss in s.subsections:
+                if(ss.type):
                     self.file.write("\\subsection{"+ ss.name+"}\n")
-                    self.file.write(ss.content+"\n\n")
-                    for sss in ss.subsubsections:
+                elif(ss.type == 0):
+                    self.file.write("\\subsection*{"+ ss.name+"}\n")
+                self.file.write(ss.content+"\n\n")
+                for sss in ss.subsubsections:
+                    if(sss.type):
                         self.file.write("\\subsubsection{"+ sss.name+"}\n")
-                        self.file.write(sss.content+"\n\n")
+                    elif(sss.type == 0):
+                        self.file.write("\\subsubsection*{"+ sss.name+"}\n")
+                    self.file.write(sss.content+"\n\n")
         self.file.write("\\end{document}\n")
         self.file.close()
     
 
-    def addimage(self,i): #For not missing the position of Image to be inserted images of the document are added to sections class
-        self.sections.append(i)
+    def addimage(self,i):
+        self.content += i.getcontent()
 
-    # Assuming that only document object exists for the each script.
-    # @staticmethod
-    # def is_image(i):
-    #     if isinstance(i,image):
-    #         document.image_flag = 1
+    def newpage(self):
+        self.content += "\\newpage\n"
     
+    def newline(self):
+        self.content += "\n\\newline\n"
+    
+    def addcontent(self,content=""):
+        self.content += content
